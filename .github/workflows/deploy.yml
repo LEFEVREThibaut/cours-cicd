@@ -25,12 +25,9 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install dependencies
-        run: npm ci
-
       - name: Run unit tests
         id: tests
-        run: npm test -- --ci --reporter=min
+        run: npm test
 
       # ---- En cas de succès des tests ----
       - name: Set up Docker Buildx
