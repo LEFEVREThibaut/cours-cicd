@@ -3,7 +3,7 @@ const { addition } = require('../app');
 // Test qui devrait passer
 test('addition de 2 + 3 = 5', () => {
 
-  throw new Error('Test volontairement échoué');
+  // throw new Error('Test volontairement échoué');
 
   expect(addition(2, 3)).toBe(5);
 });
